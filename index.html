@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <!-- saved from url=(0021)https://ben-q-technology.github.io/Contactar -->
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app" itemscope="" itemtype="https://ben-q-technology.github.io/Contactar?trackSharing=1" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app" itemscope="" itemtype="https://ben-q-technology.github.io/Contactar?trackSharing=1" class="ng-scope">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
     <link rel="stylesheet" type="text/css" href="./Página de Contacto_files/template_normal.min.css">
-<script type="text/javascript">
-/*<![CDATA[*/
-YII_CSRF_TOKEN='dde7a09de73a380f6fb9c00c54d32b955610bffd';
-/*]]>*/
-</script>
-<title>Página de Contacto</title>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+    YII_CSRF_TOKEN='dde7a09de73a380f6fb9c00c54d32b955610bffd';
+    /*]]>*/
+    </script>
+    <title>Página de Contacto</title>
+
     
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,17 +47,60 @@ YII_CSRF_TOKEN='dde7a09de73a380f6fb9c00c54d32b955610bffd';
     <meta itemprop="name" content="Ing. Benjamín Guillén">
     <meta itemprop="description" content="Ingeniero">
     <meta itemprop="image" content="http://qrcgcustomers.s3-eu-west-1.amazonaws.com/account10039775/9355568_1.png?0.6372364422362038">
-<style>
-.maps{
+    <style>
+        .sticky-container{
+            padding:0px;
+            margin:0px;
+            position:fixed;
+            right:-130px;
+            top:230px;
+            width:210px;
+            z-index: 1100;
+        }
+        .sticky li{    border-radius: 8px; margin-top: 2px;list-style-type:none;background-color:#6DC7F7;color:#efefef;height:38px;padding:0px;margin:0px 0px 2px 0px;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;cursor:pointer;}
+        .sticky li:hover{ margin-left:-95px;}
+        .sticky li img{ float:left;}
+        .sticky li p{padding-top:5px;margin:0px;line-height:16px;font-size:small;display: inline-block;}
+        .sticky li p a{text-decoration:none;color:#2C3539;}
+        .sticky li p a:hover{ text-decoration:underline;}
+        .social-icons a {padding: 6px 8px; display:inline-block;}
+        .social-icons.big-icons a{font-size:28px; padding-left: 12px; padding-right: 12px;}
+        .social-icons.bigger-icons a{font-size:38px;padding-left: 14px;padding-right: 14px;}
+        .social-icons a:hover { text-decoration: none !important; }
+        .colored-icons .link-vk, .link-vk:hover{ color:#5181B8; }
+        .colored-icons .link-facebook, .link-facebook:hover{ color:#3b5998; }
+        .colored-icons .link-twitter, .link-twitter:hover{ color:#1da1f2; }
+        .colored-icons .link-telegram, .link-telegram:hover{ color:#28A0D4; }
+        .colored-icons .link-instagram, .link-instagram:hover{ color:#833ab4; }
+        .colored-icons .link-youtube, .link-youtube:hover{ color:#d30606; }
+        .colored-icons .link-pinterest, .link-pinterest:hover{ color:#e60023; }
+        .colored-icons .link-linkedin, .link-linkedin:hover{ color:#0077b5; }
+    .maps{
     background-color: rgba(0, 255, 0, 0.856);
     font-size: 20px;
     border-radius: 10px;
     border-color: rgb(63, 197, 214);
     border-width: 5px;
-}
-</style>
+    }
+    </style>
+    <link rel="stylesheet" src="social_sharing.css">
 </head>
-<body id="dvcard-body" ng-controller="ComplexController" class="darkTheme">
+    <body id="dvcard-body" ng-controller="ComplexController" class="darkTheme">
+
+        <div class="sticky-container colored-icons">
+        <ul class="sticky">
+        <li>
+         <img src="facebook.png" width="39" height="40">
+        <p><a href="https://www.facebook.com/BenQ.Technology/" title="Conectar con Facebook" data-tag="Conectar con Facebook" onclick="window.open(this.href, this.target, 'width=770,height=600'); return false;">&nbsp; Visitanos en<br>&nbsp; Facebook</a></p>
+        </li>
+        <li>
+            <img src="instagram.png" width="39" height="40">
+           <p><a href="http://instagram.com/benq_technology" title="Conectar con Instagram" data-tag="Conectar con Instagram" onclick="window.open(this.href, this.target, 'width=770,height=600'); return false;">&nbsp; Visitanos en<br>&nbsp; Instagram</a></p>
+           </li>
+       
+        </ul>
+        </div>
+
 
 <div class="loading-welcome active welcome-screen" ng-style="{&#39;background-color&#39;: view.code.welcome_extra.background || view.welcome_extra.background}" style="background-color: rgb(255, 255, 255); display: none;">
     <div class="progress">
